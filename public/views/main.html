@@ -1,0 +1,220 @@
+<div id="header" style="margin-top:-15px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col clearfix">
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /#header -->
+<div class="container navi">
+    <div class="container" id="blur">
+        <div class="row">
+            <div class="col-sm-1 ">
+
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-user-plus fa-5x"></i></div>
+                    <div class="icon-title">ADD ACCOUNT</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-edit fa-5x"></i></div>
+                    <div class="icon-title">WHITE LABEL</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-ticket-alt fa-5x"></i></div>
+                    <div class="icon-title">OPEN A TICKET</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-lightbulb fa-5x"></i></div>
+                    <div class="icon-title">KNOWLEDGE BASE</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-tools fa-5x"></i></div>
+                    <div class="icon-title">TOOLS</div>
+                </a>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1 ">
+
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-screwdriver fa-5x"></i></div>
+                    <div class="icon-title">NETWORK REQ TROUBLESHOOTING</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-upload fa-5x"></i></div>
+                    <div class="icon-title">SUBMIT A PORT</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-store fa-5x"></i></div>
+                    <div class="icon-title">CMV STORE</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-cog fa-5x"></i></div>
+                    <div class="icon-title">ADMINISTRATION</div>
+                </a>
+            </div>
+            <div class="col-sm-2 icon-item">
+                <a href="">
+                    <div class="p-icon"><i class="fas fa-play-circle fa-5x"></i></div>
+                    <div class="icon-title">HOW TO VIDEO</div>
+                </a>
+            </div>
+            <div class="col-sm-1 ">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <input> -->
+
+<button type="button" class="open-button fas fa-comments" id="ochat">
+
+</button>
+
+<div class="chat-popup" id="myForm">
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!-- Header section containing logo -->
+        <header class="mdl-layout__header mdl-color-text--white mdl-color--light-blue-700">
+            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+                <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
+                    <h3><i class="material-icons">chat_bubble_outline</i> Friendly Chat</h3>
+                </div>
+                <div id="user-container">
+                    <div hidden id="user-pic"></div>
+                    <div hidden id="user-name"></div>
+                    <button type="button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white" id="cchat">x</button>
+                    <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+          <i class="material-icons">account_circle</i>Sign-in with Google
+        </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
+
+                <!-- Messages container -->
+                <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                        <div id="messages">
+                            <span id="message-filler"></span>
+                        </div>
+                        <form id="message-form" action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="message" maxlength="100">
+                                <!-- <textarea class="mdl-textfield__input" type="text" id="message" maxlength="100" cols="30" rows="10"></textarea> -->
+                                <label class="mdl-textfield__label" for="message">Message...</label>
+                            </div>
+                            <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              Send
+            </button>
+                        </form>
+                        <form id="image-form" action="#">
+                            <input id="mediaCapture" type="file" accept="image/*,capture=camera">
+                            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white">
+              <i class="material-icons">image</i>
+            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+                    <div class="mdl-snackbar__text"></div>
+                    <button class="mdl-snackbar__action" type="button"></button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+</div>
+
+<div class="row infoi">
+
+    <div class="col-sm-1 ">
+    </div>
+    <div class="col-sm-2 icon-item">
+    </div>
+    <div class="col-sm-1 icon-item">
+    </div>
+    <div class="col-sm-4 icon-item">
+        <form id="form-login" method="post" enctype="" action="" class="loginform">
+            <h2 class="heading text-center">Welcome </h2>
+            <div class="form-group">
+                <label for="username">Email:</label>
+                <input type="email" class="form-control" id="ipt-email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            </div>
+            <div class="form-group mb-4" id="btn-password">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="ipt-password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group mb-4" id="btn-re-password">
+                <label for="password">Re-Password:</label>
+                <input type="password" class="form-control" id="ipt-re-password" placeholder="Password">
+            </div>
+
+            <div id="remember-me" class="form-group custom-control custom-checkbox mt-4">
+                <input type="checkbox" class="custom-control-input" id="rememberme">
+                <label class="custom-control-label" for="rememberme">Remember me</label>
+            </div>
+
+            <div class="form-group">
+                <button ng-click="signin();" id="btn-login" class="btn btn-primary btn-block">
+                    <span>Login</span>
+                </button>
+                <button ng-click="signup();" id="btn-create" class="btn btn-primary btn-block">
+                    <span>Create</span>
+                </button>
+                <button ng-click="reset();" id="btn-reset" class="btn btn-danger btn-block ">
+                    <span>Reset</span>
+                </button>
+            </div>
+            <div class="text-center">
+                <p class="mb-0"><span id="link-create"> Create <a href="#/"> Account</span> </a> <span id="midlepipe"> <strong>|</strong> </span> <span id="link-reset">Reset<a href="#/"> Password</a></span > <span id="link-login">Go back<a href="#/"> Login</a></span></p>
+            </div>
+
+
+        </form>
+    </div>
+    <div class="col-sm-1 icon-item">
+    </div>
+    <div class="col-sm-2 icon-item">
+    </div>
+    <div class="col-sm-2 icon-item">
+    </div>
+    <div class="col-sm-1 ">
+    </div>
+
+</div>

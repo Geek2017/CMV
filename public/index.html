@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard | ConnectMeVoice</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- favicon -->
+
+    <link rel="icon" href="./assets/img/favicon.ico">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/css/material.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+    <!-- App Styling -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+
+    <!-- <link rel="stylesheet" href="./assets/css/datatables/dataTables.bootstrap4.min.css"/> -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+
+<body class="template-dashboard" ng-controller="indexdCtrl">
+
+    <nav class="navbar navbar-expand-xl navbar-light bg-white fixed-top">
+        <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="./assets/img/logo-connectmevoice.png" alt="logo: ConnectMeVoice" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-badge" href="#">Mailbox <span class="badge badge-danger">1</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Switch Extension</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div id="time-search">
+                            <div id="time" class="text-uppercase strong py-2 py-lg-0">
+                                time:
+                                <div class="clock" id="clock">
+
+                                </div>
+                            </div>
+                            <form id="search" class="py-2 py-lg-0">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" id="li-myaccount">
+
+                        <a href="#/" data-toggle="dropdown" class="nav-link dropdown-toggle account-avatar">
+
+                            <img id="avatarsmall" class="avatar mr-3 mx-xl-auto mb-xl-2 d-lg-block" src="./assets/img/icon-account.png" alt="icon: account" />
+                            <center><span id="uname"></span></center> My Account
+
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-lg-right" role="menu">
+
+                            <a href="#/" class="dropdown-item" data-toggle="modal" data-target="#exampleModalCenter" id="acctsettings">Account settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#/" class="dropdown-item" ng-click="logout();">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Setting Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label for="imageUpload"></label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url(./assets/img/usersbig.png);">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Phone:</label>
+                            <input type="email" class="form-control" id="u-phone" placeholder="Enter Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Mobile:</label>
+                            <input type="email" class="form-control" id="u-mobile" placeholder="Enter Mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Full Name:</label>
+                            <input type="text" class="form-control " id="u-username" placeholder="Enter Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">Email:</label>
+                            <input type="email" class="form-control" id="u-email" placeholder="Enter email" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Change Password</button>
+                    <button type="button" class="btn btn-success" id="updateprofile">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view></div>
+
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                        </li>
+                        <span class="pipe"></span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">www.ConnectMeVoice.com</a>
+                        </li>
+                        <span class="pipe"></span>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Copyright 2019 ConnectMe LLC</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyArkU60LENXmQPHRvWoK26YagzprezV3dg",
+            authDomain: "cmlformportal-b8674.firebaseapp.com",
+            databaseURL: "https://cmlformportal-b8674.firebaseio.com/",
+            projectId: "cmlformportal-b8674"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="assets/js/angular.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.4/moment-timezone-with-data-2010-2020.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data-1970-2030.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/Main.js"></script>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="assets/js/popper-1.16.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="index.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
