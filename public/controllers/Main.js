@@ -204,6 +204,9 @@ angular.module('newApp').controller('Main', function($scope) {
         }
     }
 
+
+
+
     function trigger() {
         var myVar = setInterval(myTimer, 100);
 
@@ -284,15 +287,29 @@ angular.module('newApp').controller('Main', function($scope) {
     });
 
 
+    // $("#form-login").submit(function(e) {
+    //     console.log('Trigger set....')
+    //     trigger();
+    //     e.preventDefault();
+    //     $('#blur').css({ 'filter': 'blur(0px)' });
+    //     $('.infoi').hide();
+    //     $(".container").removeClass("navi");
+    // });
+
     $("#form-login").submit(function(e) {
-        trigger();
         e.preventDefault();
-        $('#blur').css({ 'filter': 'blur(0px)' });
-        $('.infoi').hide();
-        $(".container").removeClass("navi");
-
+        db.collection("partner_data").where("custid", "==", 27256)
+            .get()
+            .then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                    console.log('123')
+                    console.log(doc.id, " => ", doc.data());
+                });
+            })
+            .catch(function(error) {
+                console.log("Error getting documents: ", error);
+            });
     });
-
 
     $("#btn-logout").click(function() {
         $('#blur').css({ 'filter': 'blur(3px)' });

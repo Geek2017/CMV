@@ -25,24 +25,24 @@ angular.module('newApp').controller('indexdCtrl', function($scope) {
 
 
 
-    setInterval(function() {
+    // setInterval(function() {
 
-        var divUtc = $('#clock');
-        console.log(divUtc);
-        var format = 'HH:mm:ss';
+    //     var divUtc = $('#clock');
+    //     console.log(divUtc);
+    //     var format = 'HH:mm:ss';
 
-        // get current local time
-        var now = moment().tz("America/New_York")
+    //     // get current local time
+    //     var now = moment().tz("America/New_York")
 
-        // display the local time
-        // divLocal.text(now.format(format));
+    //     // display the local time
+    //     // divLocal.text(now.format(format));
 
-        // switch to utc mode and display
-        divUtc.text(moment.utc().format(format) + ' EST');
+    //     // switch to utc mode and display
+    //     divUtc.text(moment.utc().format(format) + ' EST');
 
-        // switch to another time zone and display
-        // divOther.text(now.tz('America/Chicago').format(format));
-    }, 1000);
+    //     // switch to another time zone and display
+    //     // divOther.text(now.tz('America/Chicago').format(format));
+    // }, 1000);
 
 
 
