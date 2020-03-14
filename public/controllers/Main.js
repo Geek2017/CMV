@@ -98,6 +98,8 @@ angular.module('newApp').controller('Main', function($scope) {
                 password: $('#ipt-password').val()
             };
 
+
+
             JSON.stringify(data);
 
             firebase.auth().signInWithEmailAndPassword(data.email, data.password)
@@ -257,12 +259,19 @@ angular.module('newApp').controller('Main', function($scope) {
         });
     }
 
+
+
     $("#acctsettings").click(function() {
         getuserinfo();
         $('#u-username').val(localStorage.getItem('cusname'));
         $('#u-email').val(localStorage.getItem('username'));
         $('#u-phone').val(localStorage.getItem('phone'));
         $('#u-mobile').val(localStorage.getItem('mobile'));
+        $('#avatarimg').attr('src', localStorage.getItem('userimg'));
+        // $('#exampleModalCenter').modal({
+        //     backdrop: 'static',
+        //     keyboard: false
+        // })
     });
 
     $('#updateprofile').click('submit', function() {
@@ -287,29 +296,49 @@ angular.module('newApp').controller('Main', function($scope) {
     });
 
 
-    // $("#form-login").submit(function(e) {
-    //     console.log('Trigger set....')
-    //     trigger();
-    //     e.preventDefault();
-    //     $('#blur').css({ 'filter': 'blur(0px)' });
-    //     $('.infoi').hide();
-    //     $(".container").removeClass("navi");
-    // });
-
     $("#form-login").submit(function(e) {
+        $scope.execute();
+        console.log('Trigger set....')
+        trigger();
         e.preventDefault();
-        db.collection("partner_data").where("custid", "==", 27256)
-            .get()
-            .then(function(querySnapshot) {
-                querySnapshot.forEach(function(doc) {
-                    console.log('123')
-                    console.log(doc.id, " => ", doc.data());
-                });
-            })
-            .catch(function(error) {
-                console.log("Error getting documents: ", error);
-            });
+        $('#blur').css({ 'filter': 'blur(0px)' });
+        $('.infoi').hide();
+        $(".container").removeClass("navi");
     });
+
+    $scope.execute = function() {
+
+        var dbRef = firebase.database().ref().child('partner_data');
+        dbRef.on('value', snapshot => {
+            var data = snapshot.val();
+
+            for (var i = 0; i <= data.length; i++) {
+                var dbRef0 = firebase.database().ref().child('partner_data/' + i + '/custid');
+                dbRef0.on('value', dataval => {
+
+                    if (dataval.val() == $('#ipt-pid').val()) {
+                        // console.log(dataval.val(),i);
+                        // alert('Customer Validated AutoFill will take place');
+                        var dbRef = firebase.database().ref().child('partner_data/' + i);
+                        dbRef.on('value', calling => {
+                            console.log('Data Fetch....')
+                            console.log(calling.val());
+
+                            localStorage.setItem('comadd', calling.val().company);
+                            localStorage.setItem('comno', calling.val().phone);
+                            localStorage.setItem('comadd', calling.val().address + ' ' + calling.val().state);
+
+                        });
+
+
+
+                    }
+
+                });
+            }
+
+        })
+    }
 
     $("#btn-logout").click(function() {
         $('#blur').css({ 'filter': 'blur(3px)' });

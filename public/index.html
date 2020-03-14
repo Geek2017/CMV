@@ -93,51 +93,206 @@
         </div>
     </nav>
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Setting Details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="avatar-upload">
-                            <div class="avatar-edit">
-                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
-                                <label for="imageUpload"></label>
-                            </div>
-                            <div class="avatar-preview">
-                                <div id="imagePreview" style="background-image: url(./assets/img/usersbig.png);">
+
+
+    <div class="container">
+        <div class="modal fade" id="exampleModalCenter" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="widget account">
+                            <div class="widget-header">
+                                <div class="floating-header">
+                                    <div class="avatar">
+                                        <img id="avatarimg" src="./assets/img/icon-account.png" alt="avatar" />
+                                    </div>
+                                    <div class="account-info">
+                                        <h6 class="name" id="u-username">JMG</h6>
+                                        <p class="designation">ACCOUNT MANAGER</p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="widget-body account-body">
+                                <div class="table-responsive strong">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="field">Add Staff Account:</td>
+                                                <td class="value"><button type="button" data-toggle="modal" data-target="#createstaff" class="close btn-block" id="">Create</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">EMAIL:</td>
+                                                <td class="value">jmg@yopmail.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Mobile:</td>
+                                                <td class="value">(+639) 2166-86-509</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Phone:</td>
+                                                <td class="value">(+800) 431-0121</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">PIN:</td>
+                                                <td class="value text-cyan clearfix">
+                                                    Show PIN
+                                                    <a href="#" class="btn strong btn-sm btn-secondary float-right">Change PIN *</a>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="form-group">
-                            <label for="username">Phone:</label>
-                            <input type="email" class="form-control" id="u-phone" placeholder="Enter Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Mobile:</label>
-                            <input type="email" class="form-control" id="u-mobile" placeholder="Enter Mobile" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Full Name:</label>
-                            <input type="text" class="form-control " id="u-username" placeholder="Enter Full Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="username">Email:</label>
-                            <input type="email" class="form-control" id="u-email" placeholder="Enter email" required>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Change Password</button>
-                    <button type="button" class="btn btn-success" id="updateprofile">Update</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Change Password</button>
+                        <button type="button" class="btn btn-success" id="updateprofile">Update</button>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <div class="modal fade" id="createstaff" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="widget account">
+                            <div class="widget-header">
+                                <div class="floating-header">
+                                    <div class="avatar">
+                                        <img id="avatarimg" src="./assets/img/icon-account.png" alt="avatar" />
+                                    </div>
+                                    <div class="account-info">
+                                        <h6 class="name" id="u-username">&nbsp</h6>
+                                        <p class="designation">&nbsp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget-body account-body">
+                                <div class="table-responsive strong">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="field">Full Name:</td>
+                                                <td class="value"><input type="text" class="form-control" placeholder="Enter Full Name"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Email:</td>
+                                                <td class="value"><input type="email" class="form-control" placeholder="Enter Email"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Mobile:</td>
+                                                <td class="value"><input type="number" class="form-control" placeholder="Enter number"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Phone:</td>
+                                                <td class="value"><input type="number" class="form-control" placeholder="Enter number"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">PIN:</td>
+                                                <td class="value"><input type="number" class="form-control" placeholder="Enter number"></td>
+                                            </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Save & Create New</button>
+                        <button type="button" class="btn btn-success" id="updateprofile">Save & exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="modal fade" id="createstaff" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-body">
+                <div class="widget account">
+                    <div class="widget-header">
+                        <div class="floating-header">
+                            <div class="avatar">
+                                <img id="avatarimg" src="./assets/img/icon-account.png" alt="avatar" />
+                            </div>
+                            <div class="account-info">
+                                <h6 class="name" id="u-username">JMG</h6>
+                                <p class="designation">ACCOUNT MANAGER</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-body account-body">
+                        <div class="table-responsive strong">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="field">Add Staff Account:</td>
+                                        <td class="value"><button type="button" class="btn btn-success btn-block" id="">Create</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field">EMAIL:</td>
+                                        <td class="value">jmg@yopmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field">Mobile:</td>
+                                        <td class="value">(+639) 2166-86-509</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field">Phone:</td>
+                                        <td class="value">(+800) 431-0121</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="field">PIN:</td>
+                                        <td class="value text-cyan clearfix">
+                                            Show PIN
+                                            <a href="#" class="btn strong btn-sm btn-secondary float-right">Change PIN *</a>
+                                        </td>
+                                    </tr>
+
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Change Password</button>
+                        <button type="button" class="btn btn-success" id="updateprofile">Update</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
     </div>
 
     <div ng-view></div>

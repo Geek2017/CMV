@@ -12237,6 +12237,7 @@ strong,
 @media (min-width: 768px) {
     .widget.account .widget-header {
         height: 105px;
+        background-color: #d93037 !important;
     }
 }
 
@@ -12298,6 +12299,7 @@ strong,
 @media (min-width: 768px) {
     .widget.inbox-widget .widget-header {
         height: 104px;
+        background-color: #d93037 !important;
     }
 }
 
@@ -12446,7 +12448,7 @@ strong,
     border-radius: 8px 8px 0 0;
     left: 0;
     padding: 8px 10px 8px 28px;
-    background: #1c1c20;
+    background: #d93037;
     width: 100%;
 }
 
