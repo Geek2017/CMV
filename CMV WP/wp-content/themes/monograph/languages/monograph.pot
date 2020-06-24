@@ -1,0 +1,732 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Monograph\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-14 12:28+0000\n"
+"POT-Revision-Date: Tue Apr 11 2017 13:52:50 GMT+0200 (W. Europe Daylight "
+"Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: 404.php:23
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:24
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:44
+msgid "Popular Categories"
+msgstr ""
+
+#: archive.php:48 index.php:70 search.php:46
+msgid "Older Posts"
+msgstr ""
+
+#: archive.php:49 index.php:71 search.php:47
+msgid "Newer Posts"
+msgstr ""
+
+#: comments.php:33
+#, php-format
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr ""
+
+#. translators: 1: number of comments, 2: post title
+#: comments.php:37
+#, php-format
+msgctxt "comments title"
+msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:53 comments.php:74
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:56 comments.php:77
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:57 comments.php:78
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:21
+msgid "Copyright &copy;"
+msgstr ""
+
+#: footer.php:21
+msgid "Y"
+msgstr ""
+
+#: footer.php:21
+msgid "All Rights Reserved"
+msgstr ""
+
+#: footer.php:22
+msgid "Theme by"
+msgstr ""
+
+#: footer.php:22
+msgid "Magazine WordPress Themes"
+msgstr ""
+
+#: functions.php:73
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:74
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:143
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions.php:145
+msgid "This is the main sidebar area that appears on all pages"
+msgstr ""
+
+#: functions.php:153
+msgid "Footer: Column 1"
+msgstr ""
+
+#: functions.php:155 functions.php:165 functions.php:175 functions.php:185
+msgid ""
+"This is displayed in the footer of the website. By default has a width of "
+"255px."
+msgstr ""
+
+#: functions.php:163
+msgid "Footer: Column 2"
+msgstr ""
+
+#: functions.php:173
+msgid "Footer: Column 3"
+msgstr ""
+
+#: functions.php:183
+msgid "Footer: Column 4"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Merriweather, translate this to 'off'. Do not translate into your own language.
+#: functions.php:222
+msgctxt "Roboto font: on or off"
+msgid "on"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported by Source Sans Pro, translate this to 'off'. Do not translate into your own language.
+#: functions.php:227
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:270
+msgctxt "The main label for the expandable mobile menu"
+msgid "HOME"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: index.php:57
+msgid "Recent Posts"
+msgstr ""
+
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. %s theme name
+#: ilovewp-admin/ilovewp-theme-notices.php:47
+#, php-format
+msgid "Welcome to %s"
+msgstr ""
+
+#. %1$s: theme name, %2$s link
+#: ilovewp-admin/ilovewp-theme-notices.php:52
+#, php-format
+msgid ""
+"Thank you for choosing %1$s! To fully take advantage of the best our theme "
+"can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
+msgstr ""
+
+#. %s theme name
+#: ilovewp-admin/ilovewp-theme-notices.php:57
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-notices.php:91
+msgid "Improvement Recommendation:"
+msgstr ""
+
+#. User Display Name, Number of Posts per Archive Page, Link to Settings > Reading, Link to Theme About Page
+#: ilovewp-admin/ilovewp-theme-notices.php:95
+#, php-format
+msgid ""
+"%1$s, your website is set up to display <strong>%2$s</strong> posts per page,"
+" but <a href=\"%4$s\">Monograph Theme</a> works best with even numbers, as "
+"it displays posts in a grid of 2 (by default). \n"
+"\t\t\t\t<br>We recommend going to <a href=\"%3$s\">Settings > Reading</a> "
+"and changing the <strong>Blog pages show at most</strong> value to an even "
+"number: 2, 4, 6, 8, 10, etc."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-notices.php:130
+msgid "Your request failed permission check."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-notices.php:137
+msgid "Your request was processed. See ya!"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:18
+msgid "Monograph Theme"
+msgstr ""
+
+#. Theme name and version
+#: ilovewp-admin/ilovewp-theme-settings.php:41
+#, php-format
+msgid ""
+"<span class=\"theme-name\">%1$s Theme</span> <span class=\"theme-version\">"
+"(version %2$s)</span> by"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:47
+msgid "ILoveWP.com Logo"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:53
+msgid "Monograph Documentation"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:54
+msgid "Monograph Support Forum"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:55
+msgid "Leave a Review"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:56
+msgid "Contact the Developer"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:65
+msgid "Thank you for installing Monograph"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:70
+msgid "Monograph Official Page"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:71
+msgid "Monograph Live Demo"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:80
+msgid "Monograph Documentation and Support"
+msgstr ""
+
+#. Theme name and link to WordPress.org Support forum for the theme
+#: ilovewp-admin/ilovewp-theme-settings.php:85
+#, php-format
+msgid ""
+"Support for %1$s Theme is provided in the official <a href=\"%2$s\" "
+"target=\"_blank\" rel=\"noopener\">WordPress.org community support forums</a>"
+". You can expect a response to your questions in less than 24 hours."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:90
+msgid "View Monograph Documentation"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:91
+msgid "Go to Monograph Support Forum"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:98
+msgid "Help us help you"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:100
+msgid ""
+"There are a few ways that you could support us in our efforts to continue "
+"developing and maintaining free WordPress themes."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:101
+msgid ""
+"ILOVEWP.com relies on donations for much of its funding. If you would like "
+"to support us donations are very welcome."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:102
+msgid ""
+"Another way is to write a review for Monograph on the WordPress.org website. "
+"It helps and motivates us to continue updating and providing support for our "
+"Monograph Theme."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:104
+msgid "Write a Review for Monograph"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:104
+msgid "Make a Donation"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:110
+msgid "WordPress Themes and Resources"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:112
+msgid ""
+"Monograph is just one of the many free WordPress themes that we have "
+"developed. "
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:113
+msgid "Browse our WordPress Themes"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:115
+msgid ""
+"We have a great collection of guides and articles on how to create WordPress "
+"websites for: Photographers, Hotels, Schools, Universities, Churches, "
+"Museums, Doctors, Hospitals, Lawyers and other types of organizations and "
+"businesses."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:116
+msgid "Browse our WordPress Resources"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:122
+msgid "Considering a new web hosting provider?"
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:125
+msgid ""
+"Even though most hosts can host PHP websites (the programming language in "
+"which WordPress is coded in), there are providers that can provide better "
+"performance for WordPress websites than regular hosts."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:126
+msgid ""
+"We have a small list of handpicked hosting providers that have a great "
+"reputation in the developers community."
+msgstr ""
+
+#: ilovewp-admin/ilovewp-theme-settings.php:127
+msgid "Popular WordPress Hosting Providers"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:67
+#, php-format
+msgid "%s years"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:69
+msgid "a year"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:76
+#, php-format
+msgid "%s weeks"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:78
+msgid "a week"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:85
+#, php-format
+msgid "%s days"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:87
+msgid "a day"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:94
+#, php-format
+msgid "%s hours"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:96
+msgid "an hour"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:103
+#, php-format
+msgid "%s minutes"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:105
+msgid "a minute"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:112
+#, php-format
+msgid "%s seconds"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:114
+msgid "a second"
+msgstr ""
+
+#. review message
+#: inc/class-dotorg-plugin-review.php:160
+#, php-format
+msgid ""
+"You have been using the %1$s theme for %2$s now, do you like it? If so, "
+"please leave us a review/rating with your feedback!"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:162
+msgid "Leave A Review"
+msgstr ""
+
+#: inc/class-dotorg-plugin-review.php:162
+msgid "No thanks."
+msgstr ""
+
+#: inc/customizer.php:66
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/customizer.php:71
+msgid "Official Theme Page"
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "Support Forum"
+msgstr ""
+
+#: inc/customizer.php:81
+msgid "Rate Monograph"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Theme Help & Support"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Page Background Color"
+msgstr ""
+
+#: inc/customizer.php:137
+msgid "Header Background Color"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Footer Background Color"
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Link Color"
+msgstr ""
+
+#: inc/customizer.php:172
+msgid "Link Color :hover"
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "Main Text Color"
+msgstr ""
+
+#: inc/customizer.php:194
+msgid "Secondary Text Color"
+msgstr ""
+
+#: inc/customizer.php:204
+msgid "Main Menu Background Color"
+msgstr ""
+
+#: inc/customizer.php:214
+msgid "Highlight Background Color"
+msgstr ""
+
+#: inc/customizer.php:222
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:223
+msgid "Monograph Theme Options"
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:237
+msgid "Display site title and tagline in the header."
+msgstr ""
+
+#: inc/customizer.php:243
+msgid "Featured Content Blocks"
+msgstr ""
+
+#: inc/customizer.php:254
+msgid "Show Exclusive Post Section in the Header"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Header: Featured Tag"
+msgstr ""
+
+#: inc/customizer.php:267 inc/customizer.php:293 inc/customizer.php:318
+#, php-format
+msgid "This list is populated with <a href=\"%1$s\">Post Tags</a>."
+msgstr ""
+
+#: inc/customizer.php:280
+msgid "Show First Block of Featured Posts Section on the Front Page"
+msgstr ""
+
+#: inc/customizer.php:292 inc/customizer.php:317
+msgid "Front Page: Featured Tag"
+msgstr ""
+
+#: inc/customizer.php:306
+msgid "Show Second Block of Featured Posts Section on the Front Page"
+msgstr ""
+
+#: inc/customizer.php:331
+msgid "Show Featured Categories Section on the Front Page"
+msgstr ""
+
+#: inc/customizer.php:343
+msgid "Front Page: Featured Category #1"
+msgstr ""
+
+#: inc/customizer.php:344 inc/customizer.php:376 inc/customizer.php:408
+#, php-format
+msgid "This list is populated with <a href=\"%1$s\">Categories</a>."
+msgstr ""
+
+#: inc/customizer.php:356
+msgid "Featured Category #1 Color Style"
+msgstr ""
+
+#: inc/customizer.php:361 inc/customizer.php:393 inc/customizer.php:425
+msgid "Black"
+msgstr ""
+
+#: inc/customizer.php:362 inc/customizer.php:394 inc/customizer.php:426
+msgid "Blue"
+msgstr ""
+
+#: inc/customizer.php:363 inc/customizer.php:395 inc/customizer.php:427
+msgid "Green"
+msgstr ""
+
+#: inc/customizer.php:364 inc/customizer.php:396 inc/customizer.php:428
+msgid "Red"
+msgstr ""
+
+#: inc/customizer.php:365 inc/customizer.php:397 inc/customizer.php:429
+msgid "Yellow"
+msgstr ""
+
+#: inc/customizer.php:375
+msgid "Front Page: Featured Category #2"
+msgstr ""
+
+#: inc/customizer.php:388
+msgid "Featured Category #2 Color Style"
+msgstr ""
+
+#: inc/customizer.php:407
+msgid "Front Page: Featured Category #3"
+msgstr ""
+
+#: inc/customizer.php:420
+msgid "Featured Category #3 Color Style"
+msgstr ""
+
+#: inc/customizer.php:452 inc/customizer.php:502
+msgid "None"
+msgstr ""
+
+#: inc/customizer.php:621
+msgid "Default"
+msgstr ""
+
+#: inc/template-tags.php:21
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:21 inc/template-tags.php:49
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:39
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:45
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/template-tags.php:88
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Page"
+msgstr ""
+
+#. Name of the template
+msgid "Sidebar-Page"
+msgstr ""
+
+#: template-parts/content-header-exclusive.php:31
+msgid "Exclusive"
+msgstr ""
+
+#: template-parts/content-header-exclusive.php:33
+#: template-parts/content-home-categories.php:71 template-parts/content.php:35
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: template-parts/content-home-categories.php:67
+#: template-parts/content-home-featured-2.php:40
+#: template-parts/content-home-featured.php:40
+#: template-parts/content-single.php:24 template-parts/content.php:31
+msgctxt "Used on archive and post pages to separate multiple categories."
+msgid ", "
+msgstr ""
+
+#: template-parts/content-home-categories.php:98
+msgid "Featured Category Not Configured Yet"
+msgstr ""
+
+#: template-parts/content-home-featured.php:61
+msgid "No Featured Posts Found"
+msgstr ""
+
+#: template-parts/content-home-featured.php:64
+msgid ""
+"This section will display your featured posts. Configure (or disable) it via "
+"the Customizer."
+msgstr ""
+
+#: template-parts/content-home-featured.php:65
+#, php-format
+msgid ""
+"You can mark your posts with a \"Featured\" tag on the Edit Post page. <a "
+"href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-home-featured.php:66
+msgid ""
+"Important: This message is NOT visible to site visitors, only to admins and "
+"editors."
+msgstr ""
+
+#: template-parts/content-none.php:17
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. translators: %s: Name of current post.
+#: template-parts/content-page.php:23 template-parts/content-single.php:34
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-page.php:30 template-parts/content-single.php:41
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-single.php:23
+msgid "By"
+msgstr ""
+
+#: template-parts/content-single.php:24
+msgid "in"
+msgstr ""
+
+#: template-parts/content-single.php:47
+msgid ", "
+msgstr ""
+
+#: template-parts/content-single.php:50
+#, php-format
+msgid "Tags: %1$s"
+msgstr ""
+
+#. Name of the theme
+msgid "Monograph"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Monograph is a modern blog/magazine theme that displays posts in a 2-columns "
+"grid. The Front Page provides the ability to highlight (feature) your most "
+"important posts as well as feature up to 5 different post categories."
+msgstr ""
+
+#. URI of the theme
+msgid "https://www.ilovewp.com/themes/monograph/"
+msgstr ""
+
+#. Author of the theme
+msgid "ilovewpcom"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.ilovewp.com/"
+msgstr ""

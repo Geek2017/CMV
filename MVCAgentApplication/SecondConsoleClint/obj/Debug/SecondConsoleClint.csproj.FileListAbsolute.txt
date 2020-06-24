@@ -1,0 +1,67 @@
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe.config
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.pdb
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\Newtonsoft.Json.dll
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\bin\Debug\Newtonsoft.Json.xml
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.csprojResolveAssemblyReference.cache
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+E:\My Work\14Jul2018_Working\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb
+E:\My Work\15Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe.config
+E:\My Work\15Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+E:\My Work\15Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe.config
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\SecondConsoleClint.pdb
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\Newtonsoft.Json.dll
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\bin\Debug\Newtonsoft.Json.xml
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.csprojResolveAssemblyReference.cache
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.Form1.resources
+E:\My Work\16Jul2018_Working\AllThat Worked\SecondConsoleClint\SecondConsoleClint\obj\Debug\SecondConsoleClint.csproj.GenerateResource.Cache
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe.config
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\SecondConsoleClint.pdb
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\Newtonsoft.Json.dll
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\bin\Debug\Newtonsoft.Json.xml
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\obj\Debug\SecondConsoleClint.csprojResolveAssemblyReference.cache
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\obj\Debug\SecondConsoleClint.Form1.resources
+E:\My Work\17Jul2018_Working\SecondConsoleClint - Copy\SecondConsoleClint\obj\Debug\SecondConsoleClint.csproj.GenerateResource.Cache
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe.config
+E:\Proejct Work\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+E:\Proejct Work\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\SecondConsoleClint.pdb
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\log4net.dll
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\Newtonsoft.Json.dll
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\log4net.xml
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\Proejct Work\ClientApplication\SecondConsoleClint\bin\Debug\Newtonsoft.Json.xml
+E:\Proejct Work\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.AgentLoginForm.resources
+E:\Proejct Work\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.Properties.Resources.resources
+E:\Proejct Work\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.csproj.GenerateResource.Cache
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe.config
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\SecondConsoleClint.exe
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\SecondConsoleClint.pdb
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\log4net.dll
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\Newtonsoft.Json.dll
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\log4net.xml
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\bin\Debug\Newtonsoft.Json.xml
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.csprojResolveAssemblyReference.cache
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.AgentLoginForm.resources
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.Properties.Resources.resources
+E:\My Work\14Aug2018\Locally OK NOw go for VM\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.csproj.GenerateResource.Cache
+E:\Proejct Work\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.csprojResolveAssemblyReference.cache

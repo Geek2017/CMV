@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var settings = {
+        "url": "https://api.mobilevoipconnect.com/Token",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "application/x-www-form-urlencoded"
+
+        },
+        "data": {
+            "grant_type": "password",
+            "username": "chromeapi",
+            "password": "Chrome@198"
+        }
+    };
+
+    $.ajax(settings).done(function(response) {
+        console.log(response);
+    });
+</script>
+
+</html>

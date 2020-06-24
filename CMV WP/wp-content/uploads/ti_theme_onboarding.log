@@ -1,0 +1,15 @@
+[29/Nov/2019:03:36:09] (ℹ️): WordPress Instance Info:
+[29/Nov/2019:03:36:09] (ℹ️): Home URL : http://localhost/wordpress
+[29/Nov/2019:03:36:09] (ℹ️): Site URL : http://localhost/wordpress
+[29/Nov/2019:03:36:09] (ℹ️): WordPress Version : 5.3
+[29/Nov/2019:03:36:09] (ℹ️): Onboarding Version : 1.7.10
+[29/Nov/2019:03:36:09] (ℹ️): Multisite : No
+[29/Nov/2019:03:36:09] (ℹ️): Server Info : Apache/2.4.39 (Win64) PHP/7.2.18
+[29/Nov/2019:03:36:09] (ℹ️): PHP Version : 7.2.18
+[29/Nov/2019:03:36:09] (ℹ️): HTTPS : No
+[29/Nov/2019:03:36:09] (ℹ️): PHP Max Execution Time : 120
+[29/Nov/2019:03:36:09] (ℹ️): PHP Max Input Vars : 2500
+[29/Nov/2019:03:36:09] (ℹ️): Max Upload Size : 2097152
+[29/Nov/2019:03:36:09] (ℹ️): Plugins:
+[29/Nov/2019:03:36:09] (ℹ️): [PLUGIN] Elementor : v2.7.5 (Elementor.com)
+[29/Nov/2019:03:36:09] (ℹ️): [PLUGIN] Elementor - Header, Footer &amp; Blocks : v1.1.4 (Brainstorm Force, Nikhil Chavan)

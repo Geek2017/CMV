@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>X2J</title>
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="./jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./angular.js"></script>
+    <script type="text/javascript" src="./json2xml.js"></script>
+    <script type="text/javascript" src="./xml2json.js"></script>
+
+
+
+
+    <!-- TODO: Missing CoffeeScript 2 -->
+
+
+
+</head>
+
+<body>
+    <script type="text/javascript">
+        // setTimeout(function(){ 
+
+        //   window.location.reload()
+
+
+        // }, 3000);
+
+        var jsondata = {
+            "id": "",
+
+        };
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "db for h4c",
+            "method": "GET",
+            "headers": {
+                "content-type": "application/json",
+                "x-apikey": "5d42b4fe51f34a2d22522634",
+                "cache-control": "no-cache"
+            },
+            "processData": false,
+            "data": JSON.stringify(jsondata)
+        }
+
+        $.ajax(settings).done(function(response) {
+            console.log('JMG', response);
+            localStorage.setItem('xml', response)
+        });
+
+
+        function MyController($scope) {
+
+            function parseXml(xml) {
+                var dom = null;
+                if (window.DOMParser) {
+                    try {
+                        dom = (new DOMParser()).parseFromString(xml, "text/xml");
+                    } catch (e) {
+                        dom = null;
+                    }
+                } else if (window.ActiveXObject) {
+                    try {
+                        dom = new ActiveXObject('Microsoft.XMLDOM');
+                        dom.async = false;
+                        if (!dom.loadXML(xml)) // parse error ..
+                            window.alert(dom.parseError.reason + dom.parseError.srcText);
+                    } catch (e) {
+                        dom = null;
+                    }
+                } else
+                    alert("oops");
+                return dom;
+            }
+
+
+
+            $scope.XmlInput = "";
+            $scope.JsonOutput = '';
+            $scope.XmlOutput = '';
+
+            $scope.Convert = function() {
+                var parsedXml = parseXml(localStorage.getItem('xml'));
+                $scope.JsonOutput = xml2json(parsedXml, '\t');
+                $scope.XmlOutput = json2xml(eval('json=' + $scope.JsonOutput));
+            };
+
+
+            $scope.Convert();
+        }
+    </script>
+    <div ng-app>
+        <div ng-controller="MyController">
+
+            {{JsonOutput}}
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+
+</html>

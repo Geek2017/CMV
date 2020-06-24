@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-18 00:49+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: inc/options-page.php:11 inc/options-page.php:12
+msgid "Ultimate Custom ScrollBar"
+msgstr ""
+
+#: inc/options-page.php:17
+msgid "ScrollBar Settings"
+msgstr ""
+
+#: inc/options-page.php:20
+msgid "Enable/Disable ScrollBar"
+msgstr ""
+
+#: inc/options-page.php:24
+msgid "Enable"
+msgstr ""
+
+#: inc/options-page.php:25
+msgid "Disable"
+msgstr ""
+
+#: inc/options-page.php:29
+msgid "Background Color"
+msgstr ""
+
+#: inc/options-page.php:32
+msgid "You can choose scrollbar background color from this color picker."
+msgstr ""
+
+#: inc/options-page.php:35
+msgid "Cursor Color"
+msgstr ""
+
+#: inc/options-page.php:38
+msgid "You can choose scrollbar cursor color from this color picker."
+msgstr ""

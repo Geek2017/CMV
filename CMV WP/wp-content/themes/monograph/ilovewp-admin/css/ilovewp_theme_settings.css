@@ -1,0 +1,219 @@
+.ilovewp-wrapper {
+	font-size: 14px;
+	line-height: 1.6em;
+	margin: 20px 0; 
+	text-align: left; 
+	width: calc(100% - 15px);
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.07);
+}
+
+.ilovewp-wrapper a,
+.ilovewp-wrapper li {
+	-webkit-transition-duration: 0.3s; -moz-transition-duration: 0.3s; transition-duration: 0.3s;	
+}
+
+.cleaner,
+.divider {
+	margin:0;
+	clear: both; 
+	font-size:1px; 
+	height: 1px;  
+	line-height: 1px; 
+}
+
+.divider {
+	border-top: solid 1px #f1f1f1;
+	margin: 15px 0;
+}
+
+/* Header */
+
+.ilovewp-header {
+	background: #fff;
+	border-bottom: solid 1px rgba(0,0,0,0.1);
+	margin: 0;
+	padding: 50px;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+#ilovewp-logo {
+	display: block;
+	text-align: center;
+}
+
+#ilovewp-theme-info {
+	margin: 0 0 20px;
+	text-align: center;
+	vertical-align: top;
+}
+
+#ilovewp-theme-info p {
+	margin: 0;
+}
+
+#ilovewp-theme-info span.theme-name {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#ilovewp-theme-info span.theme-version {
+	font-size: 12px;
+}
+
+/* Subheader */
+
+.ilovewp-subheader {
+	background-color: #23282d;
+	margin: 0;
+	padding: 20px;
+}
+
+.ilovewp-subheader ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.ilovewp-subheader ul li {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 2em;
+	margin: 0 12px;
+}
+
+.ilovewp-subheader a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.ilovewp-subheader a:hover,
+.ilovewp-subheader a:focus {
+	color: #16c1f3;
+	text-decoration: underline;
+}
+
+.ilovewp-subheader .dashicons {
+	color: #fff;
+	display: inline-block;
+	font-size: 22px;
+	line-height: 1em;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+}
+
+/* Documentation Page */
+
+.ilovewp-documentation {
+	background-color: #fff;
+	font-size: 15px;
+	line-height: 1.8em;
+	padding: 50px;
+}
+
+.ilovewp-documentation p {
+	font-size: inherit;
+	margin: 0 0 2em;
+}
+
+.ilovewp-documentation h2 {
+	font-size: 26px;
+	margin: 0 0 1.5em;
+}
+
+.ilovewp-documentation ul {
+	margin: 1rem 2em;
+}
+
+.ilovewp-documentation li {
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+.ilovewp-documentation hr {
+	margin: 40px 0;
+}
+
+/*messages*/
+.error {color:#cc0000;}
+
+/* Documentation Columns */
+
+.ilovewp-theme-intro {
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ilovewp-theme-intro p {
+	line-height: 2em;
+}
+
+.ilovewp-documentation .button {
+	margin: 0 10px 0 0;
+}
+
+.ilovewp-documentation h3 {
+	font-size: 18px;
+	line-height: 1.75em;
+	margin: 0;
+}
+
+.ilovewp-documentation .ilovewp-doc-columns {
+	margin: 0;
+	padding: 0;
+}
+
+.ilovewp-documentation .ilovewp-doc-columns .ilovewp-doc-column {
+	display: inline;
+	float: left;
+	margin: 0 40px 40px 0;
+	vertical-align: top;
+	width: calc(50% - 20px);
+}
+
+.ilovewp-documentation .ilovewp-doc-columns .ilovewp-doc-column:nth-child(even) {
+	float: right;
+	margin-right: 0;
+}
+
+.ilovewp-documentation .ilovewp-doc-column-wrapper {
+	border: solid 1px #e1e1e1;
+	box-shadow: 2px 2px 8px rgba(0,0,0,0.07);
+}
+
+.ilovewp-documentation .column-title {
+	background-color: #eee;
+	padding: 10px 30px;
+}
+
+.ilovewp-documentation .ilovewp-doc-column-text-wrapper {
+	font-size: 14px;
+	line-height: 1.7em;
+	padding: 30px;
+}
+
+.ilovewp-documentation .ilovewp-doc-column-text-wrapper p {
+	margin: 0;
+}
+
+.ilovewp-documentation .ilovewp-doc-column-text-wrapper p + p {
+	margin-top: 2em;
+}
+
+.ilovewp-documentation .button-donate {
+	background-color: #22b366;
+	border-color: #169954;
+	box-shadow: 0 1px 0 #169954;
+	text-shadow: 0 -1px 1px #169954, 1px 0 1px #169954, 0 1px 1px #169954, -1px 0 1px #169954;
+}
+
+.ilovewp-documentation .button-donate:hover,
+.ilovewp-documentation .button-donate:focus {
+	background-color: #169954;
+}

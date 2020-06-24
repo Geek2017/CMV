@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woo API</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+
+        fetch("https://cmvstore.voipportingservices.com/wp-json/wc/v2/products/323?oauth_consumer_key=ck_c7ed560b0d4fab584988731022e9a28732dd9c0e&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1583866141&oauth_nonce=fZife8m30yS&oauth_version=1.0&oauth_signature=Y8vgMMN+tZt4HSbjl2VEWA/n+Cw=", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+    </script>
+</body>
+
+</html>

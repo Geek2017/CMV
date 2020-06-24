@@ -1,0 +1,102 @@
+/*
+Theme Name: Monograph
+Description: Used to style the TinyMCE editor.
+*/
+
+/**
+ * 1.0 - Body
+ */
+
+body {
+	color: #414141;
+	font-family: 'Source Sans Pro', Roboto, Arial, Tahoma, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.95em;
+	margin: 20px 20px 20px 40px;
+	max-width: 800px;
+	vertical-align: baseline;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #222;
+	font-family: 'Roboto', 'Source Sans Pro', Arial, Tahoma, sans-serif;
+	font-weight: 600;
+	line-height: 1.35em;
+	margin: 0.5em 0;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 36px; }
+h3 { font-size: 30px; }
+h4 { font-size: 26px; }
+h5 { font-size: 24px; }
+h6 { font-size: 22px; }
+
+p {
+	margin-top: 0;
+	margin-bottom: 1.5em; 
+}
+
+img {
+	margin-bottom: 20px; 
+}
+
+img.alignnone, 
+img.aligncenter, 
+img.alignleft, 
+img.alignright {
+	max-width: 100%;
+	width:auto;
+ 	height:auto;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+iframe {
+	max-width: 100%;
+}
+
+textarea {
+	max-width: 97%;
+}
+
+blockquote {
+    border-left: solid 4px #f4ce21;
+    padding: 0 1em;
+    margin: 1em;
+}
+a {
+	color: #ca371e;
+	text-decoration:none; 
+}
+a:hover,
+a:focus {
+	color: #007ac9;
+	cursor: pointer;
+	text-decoration:underline; 
+}
+
+ul,
+ol {
+	margin: 0 0 1.75em 1.25em;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: disc;
+}
+
+ol li {
+	list-style-type: decimal;
+}

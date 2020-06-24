@@ -1,0 +1,5 @@
+D:\Projects\ConnectMe\TFS\ConnectMe-MKPB\ClientApplication\SecondConsoleClint\obj\Debug\AgentApplication.csprojResolveAssemblyReference.cache
+D:\Projects\ConnectMe\TFS\ConnectMe-MKPB\ClientApplication\SecondConsoleClint\obj\Debug\AgentApplication.AgentLoginForm.resources
+D:\Projects\ConnectMe\TFS\ConnectMe-MKPB\ClientApplication\SecondConsoleClint\obj\Debug\AgentApplication.csproj.GenerateResource.cache
+D:\Projects\ConnectMe\TFS\ConnectMe-MKPB\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.exe
+D:\Projects\ConnectMe\TFS\ConnectMe-MKPB\ClientApplication\SecondConsoleClint\obj\Debug\SecondConsoleClint.pdb

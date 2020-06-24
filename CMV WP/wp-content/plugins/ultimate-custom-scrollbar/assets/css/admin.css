@@ -1,0 +1,45 @@
+.tp-options-header {
+    padding: 30px 20px;
+    background-color: #1FC8DF;
+    color: #fff;
+    margin: 10px 20px 20px 0;
+}
+.tp-options-header h2 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 20px;
+    font-weight: 700;
+}
+.tp-options-header .tp-author {
+    font-size: 16px;
+}
+.tp-options-header .tp-author a {
+	color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+.tp-options-header .tp-author a:hover{
+	color: #fff;
+}
+.tp-options-header .ucs-version {
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+}
+.tp-options-header .ucs-version span {
+    font-weight: 400;
+}
+.metabox-holder .pro-field {
+    background-color: #1FC8DF;
+    color: #fff;
+    border: 1px solid #1FC8DF;
+    font-size: 15px;
+    font-weight: 600;
+    width: 60px;
+    text-align: center;
+}
+
+.settings_page_ultimate_scrollbar_settings .wrap #setting-error-settings_updated{
+    margin-top: 15px;
+    margin-bottom: 0;
+}

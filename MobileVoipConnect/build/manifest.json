@@ -1,0 +1,23 @@
+{
+    "content_scripts": [{
+        "js": ["jquery-3.2.1.min.js", "MobileVoipConnectCore.js", "form.js"],
+        "matches": ["\u003Call_urls>"],
+        "run_at": "document_end"
+    }],
+    "description": "Allows the user to initiate a call by clicking on any phone number displayed when using the Chrome browser.",
+    "icons": {
+        "128": "icon-128.png",
+        "16": "icon-16.png",
+        "48": "icon-48.png"
+    },
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAj4dISd+SFhqjYXkJZD0lodGWH+YYy3hN6f2cBhozLoEaGGN+FOIY+I+eNlkqaXoNsGdDGm0OU2N3eljTSynwFKcJaLoDgkXOdLMA6TdzI7yWfBb91cJ5b/SV0cTtuTo/lYBeOU6xt9wnKmQxdcfWdzzOVAiuyeienm9HCdZBk397eKhh5HOEiLq6t7WOeg/cjb+kdUXG0BywToBJAgVynt2QSPQuE5Ci2X6jKquvRF6TwLMBGdr4B8g8B7mHjEEACYHpLe2gEEZNbXdd4vMwATt9JptQdBlkPP/7MmKsGPHiCU/dP7ShjfzHzk6K70JozQ4wi8fgzqCo0x4tX12ojQIDAQAB",
+    "manifest_version": 2,
+    "name": "Mobile VoIP Connect",
+    "permissions": ["activeTab", "storage", "http://api.mobilevoipconnect.com/"],
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "0.0.0.1"
+}

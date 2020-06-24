@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <script>
+        var data = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\
+        n < soap12: Envelope xmlns: xsi = \"http://www.w3.org/2001/XMLSchema-instance\"\
+        nxmlns: xsd = \"http://www.w3.org/2001/XMLSchema\"\
+        nxmlns: soap12 = \"http://www.w3.org/2003/05/soap-envelope\">\
+        n < soap12: Body > \n < FindProducts xmlns = \"http://WebService.jenne.com\">\
+        n < email > storeadmin @connectmevoice.com < /email>\
+        n < password > $3!!Sell @198 < /password>\
+        n < vendorCd > PHCP < /vendorCd>\
+        n < typeCd > < /typeCd>\
+        n < findString > Panasonic Business Systems < /findString>\
+        n < pageSize > 100 < /pageSize>\
+        n < page > 100 < /page>\
+        n < /FindProducts>\
+        n < /soap12:Body>\
+        n < /soap12:Envelope> ";
+
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function() {
+            if (this.readyState === 4) {
+                console.log(this.responseText);
+            }
+        });
+
+        xhr.open("POST", "https://webservice.jenne.com/");
+        xhr.setRequestHeader("Content-Type", "application/soap+xml");
+
+        xhr.send(data);
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+
+    "name": "CVM",
+    "description": "CallBack",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "form.html"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
