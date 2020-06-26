@@ -176,31 +176,32 @@ chrome.extension.onMessage.addListener(function(e, t, n) {
     }),
     chrome.extension.sendRequest({ pageLoad: !0 }, function(e) {
         cmvc.startRewrite(document.body);
+
+        var myVar = setInterval(myTimer, 5000);
+
+        function myTimer() {
+
+            var tkenv = localStorage.getItem('token')
+
+            if (tkenv) {
+                myStopFunction();
+                $("#user").hide()
+            } else {
+                chrome.storage.sync.get(['key'], function(result) {
+                    console.log('Getting Tokeen:' + result.key);
+                    if (result.key) {
+                        localStorage.setItem('token', result.key);
+                        $("#user").hide()
+                        $("#password").hide()
+                        $("#savedata").prop('value', 'Authentication Save');
+                        $('#savedata').prop('disabled', true);
+                    }
+                });
+            }
+        }
+
+        function myStopFunction() {
+            clearInterval(myVar);
+        }
+
     });
-
-
-
-var myVar = setInterval(myTimer, 100);
-
-
-function myTimer() {
-
-    chrome.storage.sync.get(['key'], function(result) {
-        console.log('Value currently is ' + result.key);
-        localStorage.setItem('token', result.key)
-    });
-    console.log("Linstening....");
-
-}
-
-function myStopFunction() {
-    clearInterval(myVar);
-}
-
-setInterval(function() {
-    if (localStorage.getItem('token').length >= 10) {
-        myStopFunction();
-    } else {
-        console.log('NO TOKEN.....')
-    }
-}, 100);

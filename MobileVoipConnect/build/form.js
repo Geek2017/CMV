@@ -1,14 +1,11 @@
 $(document).ready(function() {
 
-    if (localStorage.getItem('token')) {
-        $("#user").hide()
-        $("#password").hide()
-        $("#savedata").prop('value', 'Authentication Save');
-        $('#savedata').prop('disabled', true);
-    }
 
     $("#savedata").click(function() {
-        alert('123')
+
+
+
+
         var settings = {
             "url": "https://api.mobilevoipconnect.com/Token",
             "method": "POST",
@@ -26,15 +23,14 @@ $(document).ready(function() {
 
         $.ajax(settings).done(function(response) {
 
+
             var tokenizer = response.access_token;
 
             chrome.storage.sync.set({ key: tokenizer }, function() {
-
+                console.log(tokenizer);
+                alert('Credencial Set!')
             });
 
-            chrome.storage.sync.get(['key'], function(result) {
-                // alert(result.key);
-            });
 
         });
 
@@ -43,11 +39,11 @@ $(document).ready(function() {
 
     $("span").click(function() {
 
-        if (localStorage.getItem('token').length >= 10) {
+        if (localStorage.getItem('token')) {
 
             var settings = {
                 "dataType": "jsonp",
-                "url": "https://api.mobilevoipconnect.com/api/1.0.0/Callback/" + localStorage.getItem('cbn'),
+                "url": "https://devapi.mobilevoipconnect.com/api/1.0.0/Callback/" + localStorage.getItem('cbn'),
                 "method": "GET",
                 "timeout": 0,
                 "headers": {
@@ -59,8 +55,7 @@ $(document).ready(function() {
                 console.log(response);
             });
         } else {
-            alert('Token Auth Missing kindly Save Authentication Data');
-
+            alert('Token Auth Missing Kindly Save Authentication Credencial');
         }
     });
 });

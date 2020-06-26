@@ -6,11 +6,10 @@
     }],
     "description": "Allows the user to initiate a call by clicking on any phone number displayed when using the Chrome browser.",
     "icons": {
-        "128": "icon-128.png",
-        "16": "icon-16.png",
-        "48": "icon-48.png"
+        "48": "icon.png"
     },
     "browser_action": {
+        "default_icon": "icon.png",
         "default_popup": "index.html"
     },
 
