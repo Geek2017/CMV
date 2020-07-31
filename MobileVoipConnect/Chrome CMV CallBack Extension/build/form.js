@@ -48,38 +48,76 @@ $(document).ready(function() {
 
     $(".login").click(function(e) {
         e.preventDefault();
+
         let user = $("#user").val();
         let pwd = $("#password").val();
         let state = "Y";
 
-        chrome.storage.sync.set({ key1: user }, function() {
-            console.log('Key1 Value is set to ' + user);
-        });
-
-        chrome.storage.sync.set({ key2: pwd }, function() {
-            console.log('Key2 Value is set to ' + pwd);
-        });
-
-        chrome.storage.sync.set({ key3: state }, function() {
-            console.log('Key3 Value is set to ' + state);
-        });
-        $('.login').attr("disabled", "disabled");
-
-
-        $("#notif").append('<div class="alert alert-success">Credential Set:Login Successful! </div>');
-        setTimeout(function() {
-                chrome.tabs.getSelected(null, function(tab) {
-                    chrome.tabs.reload(tab.id);
-                });
-                $("#notif").hide();
+        var settings = {
+            "url": "https://api.mobilevoipconnect.com/Token",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
             },
-            3000);
+            "data": {
+                "grant_type": "password",
+                "username": user,
+                "password": pwd
+            }
+        };
 
-        $(".logout").attr("disabled", false);
+        $.ajax(settings).done(function(response) {
+
+            // alert(JSON.stringify(response.access_token));
+
+            var settings = {
+                "url": 'https://api.mobilevoipconnect.com/api/1.0.0/Callback/' + localStorage.getItem('cbn'),
+                "method": "GET",
+                "timeout": 0,
+                "headers": {
+                    "Authorization": "Bearer " + response.access_token
+                }
+            };
+
+            $.ajax(settings).done(function(response) {
+                // alert(JSON.stringify(response));
+
+                if (response.message) {
+                    chrome.storage.sync.set({ key1: user }, function() {
+                        console.log('Key1 Value is set to ' + user);
+                    });
+
+                    chrome.storage.sync.set({ key2: pwd }, function() {
+                        console.log('Key2 Value is set to ' + pwd);
+                    });
+
+                    chrome.storage.sync.set({ key3: state }, function() {
+                        console.log('Key3 Value is set to ' + state);
+                    });
+                    $('.login').attr("disabled", "disabled");
+
+
+                    $("#notif").append('<div class="alert alert-success">Credential Set:Login Successful! </div>');
+                    setTimeout(function() {
+                            chrome.tabs.getSelected(null, function(tab) {
+                                chrome.tabs.reload(tab.id);
+                            });
+                            $("#notif").hide();
+                        },
+                        3000);
+
+                    $(".logout").attr("disabled", false);
+                }
+
+            });
+        });
+
+
     });
 
 
-    $("svg").click(function() {
+    $('body').on('click', '.MobileVoipConnect', function(event) {
         console.log('Calling....')
         setTimeout(function() {
             let cbn = localStorage.getItem('cbn')
@@ -105,10 +143,8 @@ $(document).ready(function() {
 
                 $.ajax(settings).done(function(response) {
 
-                    console.log(response.userName);
-
                     var settings = {
-                        "url": 'https://api.mobilevoipconnect.com/api/1.0.0/Callback/' + cbn,
+                        "url": 'https://api.mobilevoipconnect.com/api/1.0.0/Callback/' + localStorage.getItem('cbn'),
                         "method": "GET",
                         "timeout": 0,
                         "headers": {
@@ -118,12 +154,16 @@ $(document).ready(function() {
 
                     $.ajax(settings).done(function(response) {
                         console.log(response.message);
-                        alert('CallBack:' + response.message)
+
+                        if (response.message) {
+                            alert('CallBack Sent!')
+                        } else {
+                            alert('CORS Unblock EXTENSION Needs to be ON & INSTALL');
+                            window.location.replace("https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino");
+                        }
 
                     });
                 });
-
-
 
             }
         }, 2000);
