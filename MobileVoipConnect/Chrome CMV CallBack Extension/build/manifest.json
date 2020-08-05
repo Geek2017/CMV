@@ -4,18 +4,18 @@
         "matches": ["\u003Call_urls>"],
         "run_at": "document_end"
     }],
-    "description": "Allows the user to initiate a call by clicking on any phone number displayed in the browser. CORS Unblock is needed to be installed 1st ON in order the extension to work the CORS Unblock facilitate the CORD issue in chromium ",
+    "description": "Initiate a call by clicking on any phone number displayed the browser, extension required: CORS Unblock extesion to function",
     "icons": {
-        "48": "icon.png"
+        "48": "./icon.png"
     },
     "browser_action": {
-        "default_icon": "icon.png",
+        "default_icon": "./icon.png",
         "default_popup": "index.html"
     },
 
 
     "manifest_version": 2,
     "name": "Mobile VoIP Connect",
-    "permissions": ["storage", "tabs", "https://api.mobilevoipconnect.com/", "http://api.mobilevoipconnect.com/"],
+    "permissions": ["storage", "tabs", "https://api.mobilevoipconnect.com/"],
     "version": "0.0.3.0"
 }
